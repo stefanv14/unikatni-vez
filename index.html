@@ -1,0 +1,492 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Unikatni vez</title>
+<meta name="viewport" content="width=device-width">
+<meta name="theme-color" content="#5c0059">	<!---------Theme color-------->
+<meta name="description" content="unikatni vez">
+<meta name="keywords" content="srbija, prodavnica, prodaja">
+<meta name="author" content="Stefan Vasilijevic">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<meta name="copyright" content="Copyright © 2019 Stefan Vasilijevic, All Rights Reserved">
+<link rel="stylesheet" type="text/css" href="css/style.css">	<!--Eksterni CSS--->
+<link rel="icon" href="images/fav.png">		<!----FAV icon----->
+<link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">	 <!--Fontawesome ikone-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.8.2/jquery.min.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Ubuntu" rel="stylesheet">
+<link rel="stylesheet" href="css/animate.css">
+<!-- Start WOWSlider.com HEAD section -->
+<link rel="stylesheet" type="text/css" href="engine1/style.css" />
+<script type="text/javascript" src="engine1/jquery.js"></script>
+<!-- End WOWSlider.com HEAD section -->
+
+<script>
+		  $(function() {
+			$('a[href*="#"]:not([href="#"])').click(function() {
+			  if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+				var target = $(this.hash);
+				target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+				if (target.length) {
+				  $('html, body').animate({
+					scrollTop: target.offset().top
+				  }, 1000);
+				  return false;
+				}
+			  }
+			});
+		  });
+</script>
+<script>
+		$(document).ready(function() {
+
+			var respmenu 		= $('#respmenu');
+			var	menu 			= $('#nav>ul');
+
+			$(respmenu).on('click', function(e) {
+				e.preventDefault();
+				menu.slideToggle();
+			});
+
+			$(window).resize(function(){
+				var sirina = $(window).width();
+				if(sirina > 768 && menu.is(':hidden')) {
+					menu.removeAttr('style');
+				}	
+			});
+
+		});	
+</script>
+<script src="js/jquery.aniview.js"></script>
+<script>
+	$(document).ready(function(){
+	$('.aniview').AniView();
+	});
+</script>
+</head>
+
+<body>
+
+<header id="header">
+		<div class="wrapper">
+            <div id="logo">
+                <img src="images/logo.svg" class="aniview slow" data-av-animation="slideInRight" alt="" >
+            </div>
+		    <nav id="nav" class="aniview slow" data-av-animation="slideInRight">
+                	<ul>
+						<li><a href="#about">O nama</a></li>
+						<li><a href="#products">Proizvodi</a></li>
+                    	<li><a href="#gallery">Galerija</a></li>
+                    	<li><a href="#contact">Kontakt</a></li>
+                    </ul>
+                    <a href="#" id="respmenu" class="button">Menu</a>
+    	    </nav>
+        </div>
+</header>
+<section id="hero">
+				<!-- Start WOWSlider.com BODY section -->
+    <div id="wowslider-container1">
+        <div class="ws_images"><ul>
+                <li><img src="data1/images/3.jpg" alt="Posteljine" title="Posteljine" id="wows1_0"/></li>
+                <li><img src="data1/images/2.jpg" alt="Posteljine" title="Posteljine" id="wows1_1"/></li>
+                <li><a href="http://wowslider.net"><img src="data1/images/9.jpg" alt="bootstrap slideshow" title="Posteljine" id="wows1_2"/></a></li>
+                <li><img src="data1/images/14.jpg" alt="Posteljine" title="Posteljine" id="wows1_3"/></li>
+            </ul>
+        </div>
+            <div class="ws_bullets"><div>
+                <a href="#" title="Posteljine"><span><img src="data1/tooltips/3.jpg" alt="Posteljine"/>1</span></a>
+                <a href="#" title="Zagrljaj"><span><img src="data1/tooltips/2.jpg" alt="Posteljine"/>2</span></a>
+                <a href="#" title="Posteljine"><span><img src="data1/tooltips/9.jpg" alt="Posteljine"/>3</span></a>
+                <a href="#" title="Zagrljaj"><span><img src="data1/tooltips/14.jpg" alt="Posteljine"/>4</span></a>
+            </div></div><div class="ws_script" style="position:absolute;left:-99%"><a href="http://wowslider.net">slider jquery</a> by WOWSlider.com v8.8</div>
+        <div class="ws_shadow"></div>
+    </div>	
+    <script type="text/javascript" src="engine1/wowslider.js"></script>
+    <script type="text/javascript" src="engine1/script.js"></script>
+    <!-- End WOWSlider.com BODY section -->	
+</section>
+<section id="products" class="aniview slow" data-av-animation="fadeInUp">
+		<div class="wrapper">
+			<h3>Proizvodi</h3>
+			<p>U svojoj ponudi imamo veliki izbor peškira različitih dimenzija.
+				Pored peškira koje sami izrađujemo od kvalitetnih uvoznih materijala, nudimo vam i peškire poznatih, makedonskih, turskih i indijskih proizvođača. Izdvajamo i naš program posteljina na koji smo posebno ponosni. Izrađujemo ih od pažljivo odabranih materijala visokog kvaliteta. Naše posteljine napravljene od 100% pamučnog platna zadovoljiće i najzahtevnije kupce.
+			</p>
+			<div class="product">
+			
+                <img src="images/p1.png" width="160" alt="">
+                <h3>Peškiri</h3>
+			</div>
+			<div class="product">
+			
+                <img src="images/p2.png" width="200" alt="">
+                <h3>Bade mantili i pidžame</h3>
+			</div>
+		  <div class="product">
+			
+                <img src="images/p3.png" width="200" alt="">
+                <h3>Posteljine</h3>
+			</div>
+			<div class="product">
+
+                <img src="images/p4.png" width="200" alt="">
+                <h3>Stolnjaci</h3>
+			</div>
+		</div>
+</section>
+
+<section id="about">
+		<div class="wrapper">
+			<div id="tekst">
+                <h2 class="aniview slow" data-av-animation="slideInLeft">O nama</h2>
+                <p><ul><li class="aniview slow" data-av-animation="slideInRight">Preduzeće "Unikatni vez" bavi se proizvodnjom i prodajom kućnog tekstila.<br></li>
+
+                  <li class="aniview slow" data-av-animation="slideInLeft">Najzastupljeniji u paleti naših prozvoda su unikatno vezeni peškiri</li><li class="aniview slow" data-av-animation="slideInRight">Prateći potrebe i zahteve naših kupaca, došli smo do proizvoda koji predstavlja mnogo više od običnog peškira</li><li class="aniview slow" data-av-animation="slideInLeft"> Na peškirima vezemo imena, lične poruke, takođe vezemo po želji kupaca</li><li class="aniview slow" data-av-animation="slideInRight"> Vršimo opremanje hotela, restorana, sportskih klubova...</li>
+                    </ul>
+                </p>
+			</div>
+		</div>
+		
+</section>
+<section id="gallery">
+ <div class="container">
+				<h2 style="text-align:center">Galerija</h2>
+
+				<div class="row">
+				  <div class="column">
+					 <div class="hovereffect">
+					<img src="data1/images/1.jpg" style="width:100%" onclick="openModal();currentSlide(1)" class="hover-shadow cursor">
+					</div>
+				  </div>
+				  <div class="column">
+					 <div class="hovereffect">
+					<img src="data1/images/2.jpg" style="width:100%" onclick="openModal();currentSlide(2)" class="hover-shadow cursor">
+					</div>
+				  </div>
+				  <div class="column">
+				  <div class="hovereffect">
+					<img src="data1/images/3.jpg" style="width:100%" onclick="openModal();currentSlide(3)" class="hover-shadow cursor">
+				  </div>
+				  </div>
+				  <div class="column">
+				  <div class="hovereffect">
+					<img src="data1/images/4.jpg" style="width:100%" onclick="openModal();currentSlide(4)" class="hover-shadow cursor">
+				  </div>
+				  </div>
+				<div class="row">
+				  <div class="column">
+				  <div class="hovereffect">
+				  <img src="data1/images/5.jpg" style="width:100%" onclick="openModal();currentSlide(5)" class="hover-shadow cursor">
+				  </div>
+				  </div>
+				  <div class="column">
+				  <div class="hovereffect">
+					<img src="data1/images/6.jpg" style="width:100%" onclick="openModal();currentSlide(6)" class="hover-shadow cursor">
+				  </div>
+				  </div>
+				  <div class="column">
+				  <div class="hovereffect">
+					<img src="data1/images/7.jpg" style="width:100%" onclick="openModal();currentSlide(7)" class="hover-shadow cursor">
+				  </div>
+				  </div>
+				  <div class="column">
+				  <div class="hovereffect">
+					<img src="data1/images/8.jpg" style="width:100%" onclick="openModal();currentSlide(8)" class="hover-shadow cursor">
+				  </div>
+				  </div>
+                  <div class="column">
+				  <div class="hovereffect">
+					<img src="data1/images/9.jpg" style="width:100%" onclick="openModal();currentSlide(9)" class="hover-shadow cursor">
+				  </div>
+				  </div>
+                  <div class="column">
+				  <div class="hovereffect">
+					<img src="data1/images/10.jpg" style="width:100%" onclick="openModal();currentSlide(10)" class="hover-shadow cursor">
+				  </div>
+				  </div>
+                  <div class="column">
+				  <div class="hovereffect">
+					<img src="data1/images/11.jpg" style="width:100%" onclick="openModal();currentSlide(11)" class="hover-shadow cursor">
+				  </div>
+				  </div>
+                  <div class="column">
+				  <div class="hovereffect">
+					<img src="data1/images/12.jpg" style="width:100%" onclick="openModal();currentSlide(12)" class="hover-shadow cursor">
+				  </div>
+				  </div>
+				</div>
+
+				<div id="myModal" class="modal">
+				  <span class="close cursor" onclick="closeModal()">&times;</span>
+				  <div class="modal-content">
+
+					<div class="mySlides">
+					  <div class="numbertext">1 / 12</div>
+					  <img src="data1/images/1.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+					  <div class="numbertext">2 / 12</div>
+					  <img src="data1/images/2.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+					  <div class="numbertext">3 / 12</div>
+					  <img src="data1/images/3.jpg" style="width:100%">
+					</div>
+					
+					<div class="mySlides">
+					  <div class="numbertext">4 / 12</div>
+					  <img src="data1/images/4.jpg" style="width:100%">
+					</div>
+					<div class="mySlides">
+					  <div class="numbertext">5 / 12</div>
+					  <img src="data1/images/5.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+					  <div class="numbertext">6 / 12</div>
+					  <img src="data1/images/6.jpg" style="width:100%">
+					</div>
+
+					<div class="mySlides">
+					  <div class="numbertext">7 / 12</div>
+					  <img src="data1/images/7.jpg" style="width:100%">
+					</div>
+					
+					<div class="mySlides">
+					  <div class="numbertext">8 / 12</div>
+					  <img src="data1/images/8.jpg" style="width:100%">
+					</div>
+										<div class="mySlides">
+					  <div class="numbertext">9 / 12</div>
+					  <img src="data1/images/9.jpg" style="width:100%">
+					</div>
+										<div class="mySlides">
+					  <div class="numbertext">10 / 12</div>
+					  <img src="data1/images/10.jpg" style="width:100%">
+					</div>
+										<div class="mySlides">
+					  <div class="numbertext">11 / 12</div>
+					  <img src="data1/images/11.jpg" style="width:100%">
+					</div>
+										<div class="mySlides">
+					  <div class="numbertext">12 / 12</div>
+					  <img src="data1/images/12.jpg" style="width:100%">
+					</div>
+					
+					<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+					<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+					<div class="caption-container">
+					  <p id="caption"></p>
+					</div>
+
+
+					<div class="column">
+					  <img class="demo cursor" src="data1/images/1.jpg" style="width:100%" onclick="currentSlide(1)" alt="Unikatni vez">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="data1/images/2.jpg" style="width:100%" onclick="currentSlide(2)" alt="Unikatni vez">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="data1/images/3.jpg" style="width:100%" onclick="currentSlide(3)" alt="Unikatni vez">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="data1/images/4.jpg" style="width:100%" onclick="currentSlide(4)" alt="Unikatni vez">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="data1/images/5.jpg" style="width:100%" onclick="currentSlide(5)" alt="Unikatni vez">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="data1/images/6.jpg" style="width:100%" onclick="currentSlide(6)" alt="Unikatni vez">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="data1/images/7.jpg" style="width:100%" onclick="currentSlide(7)" alt="Unikatni vez">
+					</div>
+					<div class="column">
+					  <img class="demo cursor" src="data1/images/8.jpg" style="width:100%" onclick="currentSlide(8)" alt="Unikatni vez">
+					</div>
+                    <div class="column">
+					  <img class="demo cursor" src="data1/images/9.jpg" style="width:100%" onclick="currentSlide(8)" alt="Unikatni vez">
+					</div>
+                    <div class="column">
+					  <img class="demo cursor" src="data1/images/10.jpg" style="width:100%" onclick="currentSlide(8)" alt="Unikatni vez">
+					</div>
+                    <div class="column">
+					  <img class="demo cursor" src="data1/images/11.jpg" style="width:100%" onclick="currentSlide(8)" alt="Unikatni vez">
+					</div>					
+                    <div class="column">
+					  <img class="demo cursor" src="data1/images/12.jpg" style="width:100%" onclick="currentSlide(8)" alt="Unikatni vez">
+					</div>					
+
+</section>
+	<div id="contact">
+        <div id="contactForm" class="aniview slow" data-av-animation="fadeInUp">
+            <!-- <h4>Kontaktirajte nas...</h4> -->
+              <form method="get" action="obrada.php" id="formica">
+                  <i class="fa fa-user" ></i>
+                  <input type="text" placeholder="Vaše ime..." id="tbIme" name="tbIme"><br>
+                  <i class="fa fa-envelope" ></i>
+                  <input type="text" placeholder="Vaš email..." id="tbEmail" name="tbEmail"><br>
+                  <textarea id="tbNapomena" name="tbNapomena">
+
+                        </textarea><br>
+                <button id="submitForme" name="submitForme">Posalji</button>
+              </form>
+        </div>
+        <div id="copyright">
+            <h5>Stefan Vasilijević 2019.</h5>
+        </div>
+	</div>
+<script>
+    function openModal() {
+      document.getElementById('myModal').style.display = "block";
+    }
+
+    function closeModal() {
+      document.getElementById('myModal').style.display = "none";
+    }
+
+    var slideIndex = 1;
+    showSlides(slideIndex);
+
+    function plusSlides(n) {
+      showSlides(slideIndex += n);
+    }
+
+    function currentSlide(n) {
+      showSlides(slideIndex = n);
+    }
+
+    function showSlides(n) {
+      var i;
+      var slides = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      var captionText = document.getElementById("caption");
+      if (n > slides.length) {slideIndex = 1}
+      if (n < 1) {slideIndex = slides.length}
+      for (i = 0; i < slides.length; i++) {
+          slides[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+          dots[i].className = dots[i].className.replace(" active", "");
+      }
+      slides[slideIndex-1].style.display = "block";
+      dots[slideIndex-1].className += " active";
+      captionText.innerHTML = dots[slideIndex-1].alt;
+    }
+</script>
+
+<script>
+    ! function ($) {
+         var defaults = {
+             sectionContainer: "> section",
+             angle: 50,
+             opacity: true,
+             scale: true,
+             outAnimation: true,
+             pageContainer: '.page_container',
+             pageOpacity: true
+         };
+         $.fn.tiltedpage_scroll = function (options) {
+             var settings = $.extend({}, defaults, options),
+                 el = $(this);
+             el.find(settings.sectionContainer).addClass("tps-section");
+             el.find('.tps-section').each(function () {
+                 var el2 = $(this);
+                 el2.wrapInner("<div class='tps-wrapper'></div>");
+             });
+
+             function isElementInViewport(el3) {
+                 var docViewTop = $(window).scrollTop(),
+                     docViewBottom = docViewTop + $(window).height(),
+                     elemTop = el3.offset().top,
+                     elemBottom = elemTop + el3.outerHeight(true);
+                 return ((elemBottom >= docViewTop) && (elemTop <= docViewBottom));
+             }
+
+             function elementVisibilityMayChange(el4) {
+                 if (isElementInViewport(el4)) {
+                     el4.addClass("tps-inview")
+                 } else {
+                     el4.removeClass("tps-inview")
+                 }
+             }
+             $(window).on('DOMContentLoaded load resize scroll', function () {
+                 el.find(settings.sectionContainer).each(function () {
+                     elementVisibilityMayChange($(this));
+                 });
+                 el.find('.tps-section.tps-inview > .tps-wrapper').each(function (index) {
+                     var el2 = $(this),
+                         elc = el2.find(settings.pageContainer),
+                         opacity = 0,
+                         opacity2 = 0,
+                         st = $(window).scrollTop(),
+                         deg = ((el2.parent().offset().top - el2.parent().height()) - st) / $(window).height() * (settings.angle * 3),
+                         scale = ((st + $(window).height() - (el2.parent().offset().top - el2.parent().height())) / ($(window).height()));
+                     if (scale > 1) scale = 1;
+                     if (deg < 0) deg = 0;
+                     if (st > el2.parent().offset().top) {
+                         if (settings.outAnimation == false) {
+                             opacity = 1;
+                             opacity2 = 1;
+                             if (opacity < 0) {
+                               opacity = 0;
+                               opacity2 = 0;
+                             }
+                             if (deg < 0) deg = 0;
+                         } else {
+                             opacity = ((el2.parent().offset().top + ($(window).height() * 1.2) - st)) / ($(window).height());
+                             opacity2 = opacity;
+                             opacity = Math.pow(opacity, 25);
+                             opacity2 = Math.pow(opacity2, 25);
+                             //console.log('- '+opacity2);
+                             deg = (el2.parent().offset().top - st) / $(window).height() * (settings.angle * 3);
+                             scale = ((st + $(window).height() - el2.parent().offset().top) / ($(window).height()));
+                         }
+                     } else {
+                         if (index != 0) {
+                             opacity = ((st + $(window).height() - el2.parent().offset().top + (el2.height() / 2)) / $(window).height());
+                           opacity2 = opacity / 2;
+                           opacity2 = opacity2 < 0.4 ? opacity2/2 : opacity2;
+                             //console.log(opacity2);
+                             if (opacity > 1) {
+                                 opacity = 1;
+                                 opacity2 = 1;
+                             }
+                         } else {
+                             opacity = 1;
+                             opacity2 = 1;
+                             deg = 0;
+                             scale = 1;
+                         }
+                     } if (settings.scale == false) scale = 1;
+                     if (settings.angle == false) deg = 0;
+                     if (settings.opacity == false) {
+                       opacity = 1;
+                       opacity2 = 1;
+                     }
+                     el2.css({
+                         'transform': 'rotateX(' + deg + 'deg) scale(' + scale + ', ' + scale + ')',
+                         opacity: opacity
+                     });
+                     elc.css({opacity: opacity2});
+                 });
+             });
+         }
+     }(window.jQuery);
+
+    $(document).ready(function(){
+      $(".main").tiltedpage_scroll({
+        angle: 20
+      });
+    });	
+</script>
+                    
+                   
+<script type="text/javascript" src="engine5/wowslider.js"></script>
+<script type="text/javascript" src="engine5/script.js"></script>
+<!-- End WOWSlider.com BODY section -->
+
+</body>
+</html>
